@@ -54,7 +54,7 @@ public class RabbitMQConfig {
 
     @Bean
     Binding externalBinding(Queue externalQueue, TopicExchange externalExchange) {
-        return BindingBuilder.bind(externalQueue).to(externalExchange).with(ROUTING_KEY);
+        return BindingBuilder.bind(externalQueue).to(externalExchange).with(EXTERNAL_ROUTING_KEY);
     }
 
     @Bean
